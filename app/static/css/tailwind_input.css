@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/* Add typography styles for article content */
+@layer components {
+  .prose {
+    max-width: 65ch;
+  }
+  .prose :where(h1):not(:where([class~="not-prose"] *)) {
+    font-size: 2.25em;
+    margin-top: 0;
+    margin-bottom: 0.8888889em;
+    line-height: 1.1111111;
+  }
+  .prose :where(h2):not(:where([class~="not-prose"] *)) {
+    font-size: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    line-height: 1.3333333;
+  }
+  .prose :where(h3):not(:where([class~="not-prose"] *)) {
+    font-size: 1.25em;
+    margin-top: 1.6em;
+    margin-bottom: 0.6em;
+    line-height: 1.6;
+  }
+  .prose :where(h4):not(:where([class~="not-prose"] *)) {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+  .prose :where(p):not(:where([class~="not-prose"] *)) {
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+  }
+  .prose :where(ul):not(:where([class~="not-prose"] *)) {
+    list-style-type: disc;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+  }
+  .prose :where(ol):not(:where([class~="not-prose"] *)) {
+    list-style-type: decimal;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+    padding-left: 1.625em;
+  }
+  .prose :where(li):not(:where([class~="not-prose"] *)) {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .prose :where(a):not(:where([class~="not-prose"] *)) {
+    color: var(--color-blue-600);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .prose :where(blockquote):not(:where([class~="not-prose"] *)) {
+    font-weight: 500;
+    font-style: italic;
+    color: var(--color-gray-900);
+    border-left-width: 0.25rem;
+    border-left-color: var(--color-gray-300);
+    padding-left: 1em;
+  }
+  .prose :where(code):not(:where([class~="not-prose"] *)) {
+    font-weight: 600;
+    font-size: 0.875em;
+  }
+  .prose :where(pre):not(:where([class~="not-prose"] *)) {
+    overflow-x: auto;
+    font-size: 0.875em;
+    line-height: 1.7142857;
+    margin-top: 1.7142857em;
+    margin-bottom: 1.7142857em;
+    border-radius: 0.375rem;
+    padding: 0.8571429em 1.1428571em;
+    background-color: var(--color-gray-100);
+  }
+  
+  /* Larger prose variant */
+  .prose-lg {
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+  
+  /* Indigo accent color for prose */
+  .prose-indigo :where(a):not(:where([class~="not-prose"] *)) {
+    color: var(--color-indigo-600);
+  }
+  .prose-indigo :where(a:hover):not(:where([class~="not-prose"] *)) {
+    color: var(--color-indigo-700);
+  }
+}
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --primary-50: #eef5ff;
+  --primary-100: #d9e7ff;
+  --primary-200: #bcd3ff;
+  --primary-300: #90b8ff;
+  --primary-400: #5c8fff;
+  --primary-500: #0f5cff;
+  --primary-600: #0041f5;
+  --primary-700: #0035e0;
+  --primary-800: #0035db;
+  --primary-900: #0046c7;
+
+  --secondary-50: #f7f7f7;
+  --secondary-100: #e3e3e3;
+  --secondary-200: #c8c8c8;
+  --secondary-300: #a4a4a4;
+  --secondary-400: #818181;
+  --secondary-500: #666666;
+  --secondary-600: #515151;
+  --secondary-700: #434343;
+  --secondary-800: #383838;
+  --secondary-900: #121212;
+}
+
+.high-traffic {
+    display: none !important;
+}

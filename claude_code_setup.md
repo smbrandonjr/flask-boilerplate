@@ -1,0 +1,5 @@
+```bash
+/clear
+/ide
+/model
+```

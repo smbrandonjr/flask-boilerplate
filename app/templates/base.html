@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TicketData - {% block title %}{% endblock title %}</title>
+
+    <link href="/static/css/root.css" rel="stylesheet">
+    <link href="/static/css/x-cloak.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='remixicons/remixicon.css') }}" rel="stylesheet"/>
+    <script src="{{ url_for('static', filename='js/alpinejs.js') }}" defer></script>
+    <link rel="stylesheet" href="/static/css/notiflix-3.2.8.min.css" />
+    <script src="/static/js/notiflix-3.2.8.min.js"></script>
+
+    {% block headers %}
+    {% endblock headers %}
+
+</head>
+<body>
+
+    {% block content %}
+    {% endblock content %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+
+</body>
+</html>

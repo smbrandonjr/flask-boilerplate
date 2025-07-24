@@ -1,0 +1,13 @@
+.venv
+.claudeignore
+.idea
+*.pyc
+.env
+__pycache__
+
+package.json
+package-lock.json
+
+/node_modules
+
+/xps_15
